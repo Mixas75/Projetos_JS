@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Lâmpada</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="instrucao">
+        Descubra como <a href="#" id="acender" onclick="ligar()">acender</a> a
+        luz.
+      </h1>
+    </header>
+    <div id="imagem">
+      <img src="imagens/lampada-apagada.png" alt="lâmpada" id="lampada" onclick="quebrar()" />
+    </div>
+    <h2 id="texto2" hidden>Agora, descubra como <a href="#" id="apagar" ondblclick="apagar()">apagar</a>.</h2>
+    
+    <button id="botao" hidden onclick="reiniciar()">Tente de novo!</button>
+    <footer><p>Desenvolvido por <a href="https://github.com/Mixas75" target="_blank">Mixas75</a></p></footer>
+  </body>
+</html>

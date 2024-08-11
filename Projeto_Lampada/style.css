@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    background-color: #ccb9b98a;
+    height: auto;
+    text-align: center;
+}
+div#imagem{
+    margin-top: 100px;
+    
+}
+a{
+    color: black;
+    text-decoration: none;
+    cursor: text;
+    
+}
+button{
+    border-radius: 6px;
+    padding: 5px;
+    border: 1px 1px rgba(0, 0, 0, 0.388) solid;
+    background-color: #ccb9b98a;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
