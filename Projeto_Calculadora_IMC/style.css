@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+body {
+  font-family: Arial, sans-serif;
+  width: 90svw;
+  background-color: #f0f0f0;
+}
+header {
+  text-align: center;
+  width: 70svw;
+  margin: 0 auto;
+  
+}
+main > div > div {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  background-color: lightgreen;
+  width: 300px;
+  height: 400px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.473);
+  border-radius: 5px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.221);
+  display: block;
+  margin: 0 auto;
+}
+input {
+  width: 120px;
+  margin-left: auto;
+  border-radius: 5px;
+  height: 25px;
+}
+input#nome{
+    font-weight: bold;
+    text-align: center;
+}
+button{
+    background-color: rgba(77, 128, 77, 0.623);
+    color: aliceblue;
+    margin: 10px auto;
+    width: 92%;
+    display: block;
+    height: 30px;
+}
+textarea{
+    display: block;
+    margin: 0 auto;
+    width: 92%;
+    height: 150px;
+    
+}
