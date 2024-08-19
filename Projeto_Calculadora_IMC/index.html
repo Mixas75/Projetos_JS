@@ -5,38 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora IMC</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
   </head>
   <body>
-    <header>
-      <h1>Calculadora de IMC</h1>
-      <p>
-        Calcule o seu IMC (Índice de Massa Corporal) e saiba se você está dentro
-        do peso ideal.
-      </p>
-    </header>
-    <main>
-        <div id="questions">
-            <div>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required />
+    
+    <main id="container">
+      <section id="img">
+        <img src="imagens/undraw_activity_tracker_re_2lvv (1).svg" alt="IMC">
+      </section>
+      <section id="calculator" >
+        <form id="form">
+          <h1 id="title">
+            Calculadora - IMC
+          </h1>
+            <p>Calcule o seu IMC (Índice de Massa Corporal) e saiba se você está dentro
+              do peso ideal.</p>
+            <div class="input-name">
+              <label for="name">Nome:</label>
+              <div class="input-field">
+                <i class="fa-solid fa-user" style="color: #00bfa6;"></i>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required pattern="[a-zA-Z]+" title="Somente letras são permitidas">
+              </div>
             </div>
-            <div>
-                <label for="peso">Peso (em kg):</label>
-                <input type="number" id="peso" name="peso" required />
-            </div>
-            <div>
-                <label for="altura">Altura (em metros):</label>
-                <input type="number" id="altura" name="altura" required />
-            </div>
+              <div class="input-box">
+                <label for="weight">Peso (Kg):</label>
+                <div class="input-field">
+                  <i class="fa-solid fa-weight-hanging" style="color: #00bfa6;"></i>
+                  <input type="number" name="weight" id="weight" placeholder="Digite seu peso" required>
+                  <span>Kg</span>
+                </div>
+              </div>
+              <div class="input-box">
+                <label for="height">Altura (m):</label>
+                <div class="input-field">
+                  <i class="fa-solid fa-ruler" style="color: #00bfa6;"></i>
+                  <input type="number" name="height" id="height" placeholder="Digite sua altura" required >
+                  <span>m</span>
+                </div>
+              </div>
+              <button type="button" id="calculate" onclick="calcular()">Calcular</button>
+        </form>
+        <div id="infos">
+          <div id="result">
+            <p>Resultado:</p>
+            <p id="resultado"></p>
+            <p id="sugestao"></p>
+          </div>
         </div>
-        <div>
-          <button type="button">Calcular</button>
-        </div>
-        <div id="result">
-            <output>
-                <textarea name="resposta" id="resposta" readonly></textarea>
-            </output>
-        </div>
+      </section>  
     </main>
   </body>
 </html>

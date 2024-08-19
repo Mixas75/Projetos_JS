@@ -12,3 +12,5 @@ Há modificação de texto a casa ação executada.
 Manipulação do DOM
 Criação e manipulação de elementos do DOM com ações do usuário, utilizando JavaScript.
 O usuário precisa digitar seu peso e altura, e o programa calcula o IMC e exibe instruções na tela.
+** Não está responsivo.
+***Refatorar, função bem complexa.
